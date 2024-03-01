@@ -1,0 +1,49 @@
+@media (min-width: 1px) and (max-width:1500px) {
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    header {
+        z-index: 4!important;
+        color: #ffffff;
+        background-color: #223C3E;
+        display: block!important;
+        height: 40px;
+        position: initial!important;
+    }
+    .logo {
+        margin: auto;
+        justify-content: center;
+        color: #ffffff;
+        font-size: 32px;
+        text-decoration: none;
+    }
+    .menu-icon {
+        visibility: visible;
+        float: right;
+        font-size: 28px;
+    }
+    .menu {
+        visibility: hidden;
+        color: #ffffff;
+        background-color: #223C3E;
+        display: flex;
+        flex-direction: column;
+        height: 100px;
+        position: absolute;
+        top: 40px; /* -61px --> 40px */
+        left: 0;
+        width: 100%;
+        z-index: -40;
+    }
+    .menu-btn:checked ~ .menu {
+        height: 100px;
+        visibility: visible;
+        animation: transformMenu 4s ease-in;
+    }
+    .menu a {
+        color: #FFFFFF;
+        text-decoration: none;
+        border-right: none;
+    }
+}

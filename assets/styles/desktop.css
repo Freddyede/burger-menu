@@ -1,0 +1,53 @@
+/* DESKTOP */
+body {
+    margin: 0;
+    padding: 0;
+}
+.menu-icon {
+    visibility: hidden;
+}
+.menu-btn {
+    display: none;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    color: #ffffff;
+    background-color: #223C3E;
+}
+.menu {
+    display: flex;
+    width: 15%;
+    height: 30px;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+.menu a{
+    color: #ffffff;
+    border-right: 1px solid #CCCCCC;
+    padding-right: 15px;
+    padding-left: 15px;
+    text-decoration: none;
+    font-size: 16px;
+}
+.menu a:last-child {
+    border-right: none;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.logo {
+    font-size: 32px;
+    color: #ffffff;
+    text-decoration: none;
+}
